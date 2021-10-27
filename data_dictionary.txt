@@ -1,0 +1,348 @@
+/*************************/
+/* person_level_data.csv */ 
+/*************************/
+
+person_id:
+  description:
+    - Unique ID for a single person.
+  type:
+    - Integer.
+
+age:
+  description:
+    - Age, top-coded at 99.
+  type:
+    - Integer.
+
+citizen_status:
+  description:
+    - Citizenship status.
+  type:
+    - String.
+
+nativity_status:
+  description:
+    - Nativity.
+  type:
+    - String.
+
+weekly_hours_worked:
+  description:
+    - Average number of hours worked per week in the last year.
+  type:
+    - Integer.
+
+ marital_status:
+  description:
+    - Marital status.
+  type:
+    - String.
+
+school_status:
+  description:
+    - School enrollment by type (public/private).
+  type:
+    - String.
+
+sex:
+  description:
+    - Sex.
+  type:
+    - String.
+
+when_last_worked:
+  description:
+    - Time since last employed.
+  type:
+    - String.
+
+worked_last_week:
+  description:
+    - Whether person worked in the past 7 days.
+  type:
+    - String.
+
+language:
+  description:
+    - Primary language spoken at home.
+  type:
+    - String.
+
+race_native_american:
+  description:
+    - Native American or Alaskan Native, alone or in combination with other races.
+  type:
+    - Integer.
+
+race_asian:
+  description:
+    - Asian, alone or in combination with other races.
+  type:
+    - Integer.
+
+race_black:
+  description:
+    - Black or African American, alone or in combination with other races.
+  type:
+    - Integer.
+
+race_native_hawaiian:
+  description:
+    - Native Hawaiian, alone or in combination with other races.
+  type:
+    - Integer.
+
+race_pacific_islander:
+  description:
+    - Pacific Islander, alone or in combination with other races.
+  type:
+    - Integer.
+
+race_white:
+  description:
+    - White, alone or in combination with other races.
+  type:
+    - Integer.
+
+race_other:
+  description:
+    - Another race, alone or in combination with other races.
+  type:
+    - Integer.
+
+uninsured:
+  description:
+    - Health insurance status.
+  type:
+    - Integer.
+  values:
+    - 0: Has health insurance.
+    - 1: Does not have health insurance.
+
+household_id:
+  description:
+    - Unique ID for a single housing unit.
+  type:
+    - Integer.
+
+hh_income_pct:
+  description:
+    - Percentage of the household's total income that comes from that person; 
+      calculated as (person's total income) / (household income).
+  type:
+    - Float.
+
+
+/**********************************************************************************/
+/**********************************************************************************/
+/**********************************************************************************/
+
+/****************************/
+/* household_level_data.csv */ 
+/****************************/
+
+household_id:
+  description:
+    - Unique ID for a single housing unit.
+  type:
+    - Integer.
+
+variable:
+  description:
+    - Name of variable.
+  type:
+    - String.
+  values:
+    - hh_income: Sum of total incomes of all persons in household.
+    - hh_size: Number of persons in the household.
+    - hh_children: Number of persons in the household whose age is less than 18.
+
+value:
+  description: 
+    - value corresponding to the attribute stored in the "variable" column
+  type:
+    - Integer.
+
+
+/**********************************************************************************/
+/**********************************************************************************/
+/**********************************************************************************/
+
+/*************************/
+/* training_set_data.csv */ 
+/*************************/
+
+person_id:
+  description:
+    - Unique ID for a single person.
+  type:
+    - Integer.
+
+age:
+  description:
+    - Age, top-coded at 99.
+  type:
+    - Integer.
+
+citizen_status:
+  description:
+    - Citizenship status.
+  type:
+    - String.
+
+nativity_status:
+  description:
+    - Nativity.
+  type:
+    - String.
+
+weekly_hours_worked:
+  description:
+    - Average number of hours worked per week in the last year.
+  type:
+    - Integer.
+
+total_income:
+  description:
+    - Person's total income in the last year, calculated as the sum of:
+      - self_employed_income
+      - wage_income
+      - interest_income
+      - other_income
+    - Recorded for all persons 18 years of age or older; 
+      0 for all persons 17 years of age or younger.
+  type:
+    - Integer.
+
+self_employed_income:
+  description:
+    - Income earned from self-employment in the last year. 
+    - Recorded for all persons 18 years of age or older; 0 for all persons 17 years of age or younger.
+  type:
+    - Integer.
+
+wage_income:
+  description:
+    - Income earned from salaries and wages in the last year. 
+    - Recorded for all persons 18 years of age or older; 0 for all persons 17 years of age or younger.
+  type:
+    - Integer.
+
+interest_income:
+  description:
+    - Income earned from interest on investments in the last year. 
+    - Recorded for all persons 18 years of age or older; 0 for all persons 17 years of age or younger.
+  type:
+    - Integer.
+
+other_income:
+  description:
+    - Income earned from other sources. 
+    - Recorded for all persons 18 years of age or older; 0 for all persons 17 years of age or younger.
+  type:
+    - Integer.
+
+ marital_status:
+  description:
+    - Marital status.
+  type:
+    - String.
+
+school_status:
+  description:
+    - School enrollment by type (public/private).
+  type:
+    - String.
+
+sex:
+  description:
+    - Sex.
+  type:
+    - String.
+
+when_last_worked:
+  description:
+    - Time since last employed.
+  type:
+    - String.
+
+worked_last_week:
+  description:
+    - Whether person worked in the past 7 days.
+  type:
+    - String.
+
+language:
+  description:
+    - Primary language spoken at home.
+  type:
+    - String.
+
+race_native_american:
+  description:
+    - Native American or Alaskan Native, alone or in combination with other races.
+  type:
+    - Integer.
+
+race_asian:
+  description:
+    - Asian, alone or in combination with other races.
+  type:
+    - Integer.
+
+race_black:
+  description:
+    - Black or African American, alone or in combination with other races.
+  type:
+    - Integer.
+
+race_native_hawaiian:
+  description:
+    - Native Hawaiian, alone or in combination with other races.
+  type:
+    - Integer.
+
+race_pacific_islander:
+  description:
+    - Pacific Islander, alone or in combination with other races.
+  type:
+    - Integer.
+
+race_white:
+  description:
+    - White, alone or in combination with other races.
+  type:
+    - Integer.
+
+race_other:
+  description:
+    - Another race, alone or in combination with other races.
+  type:
+    - Integer.
+
+uninsured:
+  description:
+    - Health insurance status.
+  type:
+    - Integer.
+  values:
+    - 0: Has health insurance.
+    - 1: Does not have health insurance.
+
+household_id:
+  description:
+    - Unique ID for a single housing unit.
+  type:
+    - Integer.
+
+
+/**********************************************************************************/
+/**********************************************************************************/
+/**********************************************************************************/
+
+/**********************/
+/* unlabeled_data.csv */ 
+/**********************/
+
+This data set has the same columns as training_set_data.csv except for the "uninsured" column
+
