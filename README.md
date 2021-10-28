@@ -25,7 +25,7 @@ With this knowedge in hand, outreach efforts can be more targeted and more impac
 - Iteratively improve model performance until it is GA ready.
 
 ## Data
-Data dictionary [here](https://github.com/campbel94/insurance_classifier/blob/main/data_dictionary.txt)
+Data dictionary [here](https://github.com/campbel94/insurance_classifier/blob/main/data_dictionary.txt)<br>
 The features available in the data include income:
 - age
 - citizen_status
