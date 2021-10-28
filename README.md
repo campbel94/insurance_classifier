@@ -26,10 +26,12 @@ With this knowedge in hand, outreach efforts can be more targeted and more impac
 
 ## Data
 Data dictionary [here](https://github.com/campbel94/insurance_classifier/blob/main/data_dictionary.txt)<br>
-The features available in the data include income:
+The features available in the data include:
+
+- income
 - age
 - citizen_status
-- nativity_status',
+- nativity_status
 - weekly_hours_worked, worked_last_week & when_last_worked
 - total_income, self_employed_income, wage_income, interest_income & other_income
 - marital_status
